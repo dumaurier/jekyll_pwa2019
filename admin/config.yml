@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Name, name: name, widget: string, hint: "The name of the platform, i.e. Twitter, Facebook" }
               - {label: URL, name: url, widget: string, hint: "The full address for your profile, i.e. https://twitter.com/jshvgt" }
-              - {label: Class, name: class, widget: string, hint: "The microformat for the link type (u-tel, u-url, u-email" }
+              - {label: Class, name: class, widget: string, hint: "The microformat for the link type (u-tel, u-url, u-email)" }
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     description: >
