@@ -6,17 +6,20 @@ media_folder: "/static-assets/images/uploads" # Media files will be stored in th
 public_folder: "/static-assets/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - label: "About"
-    name: "about"
+  - label: "Site Info"
+    name: "site info"
     files:
       - label: "Social Media"
         name: "social"
         file: "_data/social.yml"
-        widget: list
         fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Icon, name: icon, widget: string}
-          - {label: Link, name: link, widget: string} 
+          - label: platform
+            name: platform
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Icon, name: icon, widget: string}
+              - {label: Link, name: link, widget: string}
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     description: >
