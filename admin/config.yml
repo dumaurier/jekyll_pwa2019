@@ -9,6 +9,12 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Site Info"
     name: "site info"
     files:
+      - label: "About"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {label: name, name: name, widget: string}
+          - {label: bio, name: bio, widget: string}
       - label: "Social Media"
         name: "social"
         file: "_data/social.yml"
