@@ -15,6 +15,14 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: name, name: name, widget: string}
           - {label: bio, name: bio, widget: text}
+      - label: "Site Settings"
+        name: "settings"
+        file: "_data/settings.yml"
+        fields:
+          - {label: Title, name: title, widget: string, hint: "The name of your site" }
+          - {label: Domain, name: domainname, widget: string, hint: "The url of your site. Example: https://mysite.com" }
+          - {label: Webmentions, name: webmention, widget: boolean, default: false }
+          - {label: Bootstrap, name: bootstrap, widget: boolean, default: false }
       - label: "Social Media"
         name: "social"
         file: "_data/social.yml"
