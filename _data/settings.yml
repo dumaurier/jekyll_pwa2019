@@ -1,5 +1,4 @@
 title: My Site
-sitename: My Site
 domainname: https://yoursite.netlify.com
 webmention: false
 bootstrap: true
