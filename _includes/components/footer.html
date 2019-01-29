@@ -1,7 +1,7 @@
 <footer class="global-footer m-10 container" role="contentinfo">
     <div class="indieweb-card h-card">
         <ul class="indieweb-social nav">
-            {% for social in site.data.social %}
+            {% for social in site.data.social.platform %}
              <li class="nav-item">
                <a href="{{social.url}}" rel="me" class="{{ social.class }} nav-link">
                  {{ social.name }}
@@ -9,12 +9,10 @@
              </li>
            {% endfor %}
         </ul>
-      
-        {% assign about = site.data.about %}
         
-        <p class="p-note footer-bio">{{ about.bio }} </p>
+        <p class="p-note footer-bio">{{ site.data.about.bio }} </p>
 
-        <small>&copy; {{ site.time | date: '%Y' }} {{ about.name }}. all mistakes are my own.</small>
+        <small>&copy; {{ site.time | date: '%Y' }} {{ site.data.about.name }}. all mistakes are my own.</small>
     </div>  
 </footer>
 
