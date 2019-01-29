@@ -1,4 +1,4 @@
 title: Testing The Testings
 domainname: 'https://yyz-jekyll-pwa.netlify.com'
 webmention: false
-bootstrap: false
+bootstrap: true
