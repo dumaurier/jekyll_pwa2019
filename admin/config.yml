@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/about.yml"
         fields:
           - {label: name, name: name, widget: string}
-          - {label: bio, name: bio, widget: string}
+          - {label: bio, name: bio, widget: text}
       - label: "Social Media"
         name: "social"
         file: "_data/social.yml"
