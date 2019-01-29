@@ -1,19 +1,16 @@
 platform:
-  - icon: fa-facebook
-    link: 'http://facebook.com/'
-    name: Facebook
-  - icon: fa-twitter
-    link: 'http://twitter.com/'
-    name: Twitter
-  - icon: fa-pinterest
-    link: 'http://pintrest.com/'
-    name: Pinterest
-  - icon: fa-dribbble
-    link: 'http://dribble.com/'
-    name: Dribbble
-  - icon: fa-behance
-    link: 'http://behance.com/'
-    name: Behance
-  - icon: fa-linkedin
-    link: 'http://linkedin.com/'
-    name: LinkedIn
+  - name: twitter
+    url: 'https://twitter.com/yourname'
+    class: u-url;
+  - name: github
+    url: 'https://github.com/yourname'
+    class: u-url;
+  - name: email
+    url: 'mailto:email@domain.com'
+    class: u-email
+  - name: sms
+    url: 'sms:+14169671111'
+    class: u-tel
+  - name: my site
+    url: 'https://domain.com'
+    class: u-url
