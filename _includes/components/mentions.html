@@ -10,11 +10,11 @@
     <p>
       If you've written a response to this post enter the url of your post and send it over.
     </p>
-    <form class="mention-form" method="post" action="https://webmention.io/{{ site.data.about.me.webmention }}/webmention">
+    <form class="mention-form" method="post" action="https://webmention.io/{{ site.data.settings.domainname }}/webmention">
       <fieldset class="form-group">
           <label for="url-mention">Add your response:</label>
           <input class="form-control" id="url-mention" type="url" name="source" required placeholder="https://yourdomain/response" />
-          <input type="hidden" name="target" value="{{ site.domainname}}{{ page.url }}"  />
+          <input type="hidden" name="target" value="{{ site.data.settings.domainname }}{{ page.url }}"  />
           
       </fieldset>
       <button class="btn btn-primary">Send webmention</button>
