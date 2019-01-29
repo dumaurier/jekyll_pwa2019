@@ -1,10 +1,10 @@
 platform:
   - name: twitter
     url: 'https://twitter.com/yourname'
-    class: u-url;
+    class: u-url
   - name: github
     url: 'https://github.com/yourname'
-    class: u-url;
+    class: u-url
   - name: email
     url: 'mailto:email@domain.com'
     class: u-email
